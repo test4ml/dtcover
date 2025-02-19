@@ -1,0 +1,11 @@
+bash attack_retrain_arg_baselines.sh naive_WordSwapNeighboringCharacterSwap
+bash attack_retrain_arg_baselines.sh naive_WordSwapRandomCharacterDeletion
+bash attack_retrain_arg_baselines.sh naive_WordSwapRandomCharacterInsertion
+bash attack_retrain_arg_baselines.sh naive_WordSwapQWERTY
+bash attack_retrain_arg_baselines.sh fgsm
+bash attack_retrain_arg_baselines.sh hotflip
+bash attack_retrain_arg_baselines.sh leap
+bash attack_retrain_arg_baselines.sh a2t
+bash attack_retrain_arg_baselines.sh checklist
+bash attack_retrain_arg_baselines.sh pruthi
+bash attack_retrain_arg_baselines.sh dtcover
