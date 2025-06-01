@@ -1,9 +1,13 @@
 # DTCover
 
 ## Purpose
-we propose a novel approach called **DTCover** for Decoder-only Transformers Coverage Guided Adversarial Testing. The main idea of our approach is to design coverage metrics around the modules in the transformer and perform coverage-guided adversarial testing against uncovered neurons
+we propose a novel approach called **DTCover** for Decoder-only Transformers Coverage Guided Adversarial Testing. The main idea of our approach is to design coverage metrics around the modules in the transformer and perform coverage-guided adversarial testing against uncovered neurons.
+
+In addition, we provide an [appendix](DTCover_appendix.pdf) that describes how the three neuron coverage metrics in our algorithm calculate the overall coverage value, as well as the original accuracy of the three large language models on three datasets, and the overlap between adversarial samples tested by different neuron coverage metrics.
+In the discussion section of the appendix, we discuss the growth of the three neuron coverage metrics as the sample size increases. Finally, we discuss the time efficiency of DTCover.
+
 ## Provenance
-This is the source code for the paper "DTCover: Towards Coverage Guided Adversarial Testing for Decoder-only Transformer Language Models"
+This is the source code for the paper "DTCover: Coverage Guided Adversarial Testing for Decoder-only Transformer Language Models"
 
 # Data
 Our data and models are from [HuggingFace](https://huggingface.co/), and the code will automatically download the required data and models (Internet connection is required).
