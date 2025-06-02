@@ -81,22 +81,14 @@ python rqs/summary_metrics.py
 ```
 Then the adversarial testing results will be saved in `rq_results/summary_metrics.csv`.
 
-
-## RQ3: Metric Overlaps
-```bash
-python rqs/overlaps.py
-```
-Then the overlaps figure will be saved in `rq_results/venn_out.pdf`.
-
-
-## RQ4: Parameter Sensitivity
+## RQ3: Parameter Sensitivity
 ```bash
 bash search_grid.sh
 python rqs/draw_search_threshold.py
 ```
 Then the search results will be saved in `figures/search_grid.pdf`.
 
-## RQ5: Model Retraining
+## RQ4: Model Retraining
 Generate adversarial testing results in the valid dataset.
 ```bash
 bash attack_retrain_valid_baselines.sh
@@ -115,16 +107,6 @@ After retraining, move the models to the path `./retrain_models/Llama-2-7b-chat-
 bash attack_retrain_baselines.sh
 ```
 Then the adversarial testing results of retrained models will be saved in `results_retrain/results_${recipe}`.
-
-## Discussion
-```bash
-python rqs/discussion_lines_with_threshold.py --metric NCovMlp
-python rqs/discussion_lines_with_threshold.py --metric NCovPairAtten
-python rqs/discussion_lines_with_threshold.py --metric NCovPosAtten
-python rqs/time_efficiency.py
-```
-
-Figures will be saved as `figures/discussion_with_threshold_${metric}.pdf`
 
 # LICENSE
 Apache License Version 2.0
